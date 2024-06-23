@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-container {
+    background-color: #ffffff;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin-bottom: 0;
+}
+
+.container {
+    background-image: url("https://res.cloudinary.com/dsrxoaqc3/image/upload/v1719044357/Frame_7_2_iax6ol.png");
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.logo {
+    height: 40px;
+    width: 100px;
+}
+
+.caption {
+    color: #ffffff;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.button1 {
+    width: 160px;
+    height: 35px;
+    background-color: #ffffff;
+    border: none;
+    color: #f50c23;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.section1 span {
+    display: flex;
+    align-items: center;
+}
+
+.section1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.aboutHeading {
+    color: #ed131a;
+    font-size: 1.2em;
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+.section-image1,
+.section-image2 {
+    width: 80px;
+}
+
+
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    text-align: center;
+}
+
+.paragraph {
+    color: black;
+    font-size: 11px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.name {
+    margin-top: 10px;
+}
+
+.quick-view-button1 {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.card-heading {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+button {
+    width: 130px;
+    height: 36px;
+    background-color: #e81a2b;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bottom-divider {
+    width: 100%;
+}
+
+.footer-container {
+    background-image: url("https://res.cloudinary.com/dsrxoaqc3/image/upload/v1719045653/Vector_ezkyll.png");
+    background-size: cover;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.left-image {
+    width: 40px;
+    height: 50px;
+    padding: 8px;
+    float: left;
+    text-align: right;
+    margin-right: auto;
+}
+
+.right-image {
+    width: 40px;
+    height: 50px;
+    padding: 8px;
+    float: right;
+    text-align: left;
+    margin-left: auto;
+}
+
+.footer-heading {
+    color: #faf616;
+    font-size: 22px;
+    text-align: center;
+}
+
+.share {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image {
+    width: 25px;
+    height: 25px;
+    padding-bottom: 20px;
+    margin: 6px;
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.close1 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close1,
+.close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus,
+.close2:hover,
+.close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.popup-card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.popup-image1 {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+popup-card1 div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.popup-card1 img {
+    max-width: 60vw;
+    height: auto;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.popup-card2 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popup-card2 h1 {
+    font-size: 1em;
+}
+
+.popup-card2 h3 {
+    font-size: 1em;
+}
+
+.popup-card2 p,
+.popup-card2 ul {
+    font-size: 1em;
+}
+
+.popup-card2 ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.popup-card2 button {
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.popup-image2,
+.popup-image3,
+.popup-image4,
+.popup-image5 {
+    width: 10px;
+    margin: 2px;
+}
+
+@media (max-width: 576px) {
+    .container {
+        height: auto;
+    }
+
+    .caption,
+    .button1,
+    .aboutHeading,
+    .paragraph,
+    .card-heading,
+    .footer-heading {
+        font-size: 14px;
+    }
+
+    hr {
+        width: 130px;
+        border-color: #f5481d;
+        border-style: dashed;
+        border-width: 1px;
+    }
+
+    .popup-image1 {
+        width: 90%;
+    }
+
+    .popup-image2,
+    .popup-image3,
+    .popup-image4,
+    .popup-image5 {
+        width: 6px;
+    }
+
+    .popup-content {
+        width: 90%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .container {
+        height: auto;
+    }
+
+    .caption,
+    .button1,
+    .aboutHeading,
+    .paragraph,
+    .card-heading,
+    .footer-heading {
+        font-size: 18px;
+    }
+
+    hr {
+        width: 230px;
+        border-color: #f5481d;
+        border-style: dashed;
+        border-width: 1px;
+    }
+
+    .popup-image1 {
+        width: 100%;
+    }
+
+    .popup-image2,
+    .popup-image3,
+    .popup-image4,
+    .popup-image5 {
+        width: 20px;
+    }
+
+    .popup-content {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        height: auto;
+    }
+
+    .caption,
+    .button1,
+    .aboutHeading,
+    .paragraph,
+    .card-heading,
+    .footer-heading {
+        font-size: 20px;
+    }
+
+    hr {
+        width: 280px;
+        border-color: #f5481d;
+        border-style: dashed;
+        border-width: 1px;
+    }
+
+    .popup-image1 {
+        width: 60%;
+    }
+
+    .popup-image2,
+    .popup-image3,
+    .popup-image4,
+    .popup-image5 {
+        width: 9%;
+    }
+
+    .popup-content {
+        width: 40%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .container {
+        height: auto;
+    }
+
+    .caption,
+    .button1,
+    .aboutHeading,
+    .paragraph,
+    .card-heading,
+    .footer-heading {
+        font-size: 22px;
+    }
+
+    hr {
+        width: 200px;
+        border-color: #f5481d;
+        border-style: dashed;
+        border-width: 1px;
+    }
+
+    hr {
+        width: 280px;
+        border-color: #f5481d;
+        border-style: dashed;
+        border-width: 1px;
+    }
+
+    .popup-image1 {
+        width: 350px;
+        height: 300px;
+    }
+
+    .popup-image2,
+    .popup-image3,
+    .popup-image4,
+    .popup-image5 {
+        width: 70px;
+    }
+
+    .popup-content {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .container {
+        height: auto;
+    }
+
+    .caption,
+    .button1,
+    .aboutHeading,
+    .paragraph,
+    .card-heading,
+    .footer-heading {
+        font-size: 25px;
+    }
+
+    hr {
+        width: 500px;
+        border-color: #f5481d;
+        border-style: dashed;
+        border-width: 1px;
+    }
+
+    .popup-image1 {
+        width: 50%;
+    }
+
+    .popup-image2,
+    .popup-image3,
+    .popup-image4,
+    .popup-image5 {
+        width: 8vw;
+    }
+
+    .popup-content {
+        width: 50%;
+    }
+}
